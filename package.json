@@ -1,0 +1,33 @@
+{
+  "name": "kgan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/zero.ts",
+  "module": "./dist/zero.ts",
+  "types": "./dist/zero.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kganallinone/kgan.zero.git"
+  },
+  "keywords": [
+    "kgan",
+    "kgan.zero",
+    "typescript",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kganallinone/kgan.zero/issues"
+  },
+  "homepage": "https://github.com/kganallinone/kgan.zero#readme",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}
