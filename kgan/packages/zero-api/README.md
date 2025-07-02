@@ -60,7 +60,7 @@ const req = apiClient()
 ### Auto-detected environment usage:
 
 ```ts
-const api = req.get(); // Automatically selects matching environment via location.origin
+const api = req.api(); // Automatically selects matching environment via location.origin
 
 const users = await api.get("/users");
 const newUser = await api.post("/users", { name: "Jane Doe" });

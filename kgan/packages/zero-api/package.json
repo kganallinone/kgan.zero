@@ -1,37 +1,55 @@
 {
   "name": "@kgan/zero-api",
-  "version": "1.0.1",
-  "description": "",
-  "main": "./dist/index.ts",
-  "module": "./dist/index.ts",
+  "version": "1.0.17",
+  "description": "Minimal-config HTTP client with token support and environment routing.",
+  "type": "module",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
-    "build": "tsup",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --project tsconfig.build.json",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kganallinone/kgan.zero.git"
+    "url": "https://github.com/kganallinone/kgan.zero.git"
   },
-  "keywords": [
-    "kgan",
-    "kgan.zero",
-    "typescript",
-    "api",
-    "kgan.zero.api"
-  ],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/kganallinone/kgan.zero/issues"
   },
   "homepage": "https://github.com/kganallinone/kgan.zero#readme",
+  "keywords": [
+    "kgan",
+    "zero-api",
+    "typescript",
+    "api-client",
+    "fetch",
+    "http-client"
+  ],
+  "author": "KGAN",
+  "license": "ISC",
   "devDependencies": {
-    "tsup": "^8.5.0",
+    "@types/node": "^24.0.10",
+    "rimraf": "^5.0.0",
     "typescript": "^5.8.3"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

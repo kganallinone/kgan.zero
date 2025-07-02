@@ -98,7 +98,7 @@ class APIClientBuilder {
     }
   }
 
-  get(envOrKey?: EnvType | string) {
+  api(envOrKey?: EnvType | string) {
     let baseURL: string;
 
     if (!envOrKey) {
