@@ -3,7 +3,7 @@ import {
   CustomURLMapping,
   EnvType,
   URLMapping,
-} from "../types/api-clients.types";
+} from "../types/api-clients.types.js";
 
 class APIClientBuilder {
   private configOptions: ConfigOptions = {

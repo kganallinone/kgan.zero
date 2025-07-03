@@ -5,13 +5,17 @@
     "esModuleInterop": true,
     "strictNullChecks": true,
     "target": "ES2022",
-    "moduleResolution": "Node10",
-    "module": "CommonJS",
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
     "declaration": true,
+    "emitDeclarationOnly": false,
+    "outDir": "dist",
     "isolatedModules": true,
-    "noEmit": true,
-    "outDir": "dist"
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": "kgan",
+    "composite": true
   },
-  "include": ["kgan", "tsup.config.ts", "tsconfig.json"],
-  "exclude": ["node_modules"]
+  "include": ["kgan"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
 }

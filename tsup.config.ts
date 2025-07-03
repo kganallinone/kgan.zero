@@ -1,10 +1,10 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
+  entry: ["kgan/zero.ts"],
   format: ["cjs", "esm"],
-  entry: ["./kgan/zero.ts"],
   dts: true,
-  shims: true,
-  skipNodeModulesBundle: true,
   clean: true,
+  target: "es2022",
+  minify: true,
 });

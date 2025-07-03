@@ -1,6 +1,6 @@
 {
   "name": "@kgan/zero-api",
-  "version": "1.0.17",
+  "version": "1.0.19",
   "description": "Minimal-config HTTP client with token support and environment routing.",
   "type": "module",
   "main": "./dist/index.js",

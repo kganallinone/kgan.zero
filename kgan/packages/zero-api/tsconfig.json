@@ -5,16 +5,16 @@
     "esModuleInterop": true,
     "strictNullChecks": true,
     "target": "ES2022",
-    "moduleResolution": "NodeNext", // Changed from Node10
-    "module": "ESNext", // Changed from CommonJS
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
     "declaration": true,
-    "emitDeclarationOnly": false, // Changed to allow JS emission
+    "emitDeclarationOnly": false,
     "outDir": "dist",
-    "isolatedModules": true, // Recommended for tsup/Vite
-    "skipLibCheck": true, // Added for better compatibility
+    "isolatedModules": true,
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "rootDir": "src", // Explicit source root
-    "composite": true // Better for incremental builds
+    "rootDir": "src",
+    "composite": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist", "**/*.test.ts"]

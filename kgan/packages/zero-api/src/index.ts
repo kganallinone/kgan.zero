@@ -1,5 +1,5 @@
 // Import the main API client function
-import { apiClient } from "./functions/api-client.functions";
+import { apiClient } from "./functions/api-client.functions.js";
 
 // Import all necessary types
 import type {
@@ -7,7 +7,7 @@ import type {
   EnvType,
   ConfigOptions,
   CustomURLMapping,
-} from "./types/api-clients.types";
+} from "./types/api-clients.types.js";
 
 // Export the API client as the main functionality
 export { apiClient };
